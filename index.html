@@ -244,8 +244,8 @@
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         <div className="flex items-center gap-3 flex-shrink-0">
-                        <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full border-2 border-[#fbc707] flex items-center justify-center flex-shrink-0">
-                            <Brain size={24} className="md:w-8 md:h-8 text-[#d3302a]" />
+                        <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full border-2 border-[#fbc707] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                            <img src="Salus Animae logo completo.jpg" alt="Logo Salus Animæ" className="w-full h-full object-cover" />
                         </div>
                         <div className="flex flex-col justify-center">
                             <span className="text-[#fbc707] font-serif text-xl md:text-2xl font-bold tracking-wide leading-none">Salus Animæ</span>
@@ -328,6 +328,13 @@
                         icon={MessageCircle} 
                         label="Canal de WhatsApp" 
                         />
+                    </div>
+
+                    {/* Logo Central en Hero */}
+                    <div className="flex justify-center mb-6">
+                        <div className="w-40 h-40 md:w-48 md:h-48 bg-white rounded-full border-4 border-[#fbc707] shadow-2xl overflow-hidden flex items-center justify-center">
+                            <img src="Salus Animae logo completo.jpg" alt="Logo Salus Animæ Grande" className="w-full h-full object-cover" />
+                        </div>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-serif font-bold text-[#fbc707] mb-4 drop-shadow-md">
@@ -495,7 +502,7 @@
                     </div>
 
                     {/* 2do Título: Talleres Especializados */}
-                    <div className="mb-16">
+                    <div className="mb-16" id="specialized-workshops">
                         <SectionTitle>Talleres Especializados</SectionTitle>
                         
                         <Card className="bg-gradient-to-r from-white to-orange-50">
@@ -546,6 +553,23 @@
                         <div className="mt-6 flex justify-end">
                             <WhatsAppButton text="Solicitar Taller" />
                         </div>
+                        </Card>
+                    </div>
+
+                    {/* Sección: Coordinadora del Gabinete */}
+                    <div className="mb-16">
+                        <SectionTitle>Coordinadora del Gabinete</SectionTitle>
+                        <Card className="bg-gradient-to-br from-[#fffef0] to-white">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-48 h-48 rounded-full border-4 border-[#fbc707] shadow-xl overflow-hidden mb-6">
+                                    <img src="IMG-20251201-WA0174.jpg" alt="Lic. Narel Campero" className="w-full h-full object-cover" />
+                                </div>
+                                <h3 className="text-2xl font-serif font-bold text-[#d3302a] mb-2">Est. Mgtr., Lic. Narel Campero</h3>
+                                <p className="text-gray-700 font-medium">Coordinadora del Gabinete Psicológico Salus Animæ</p>
+                                <div className="mt-6">
+                                    <WhatsAppButton text="Contactar directamente" />
+                                </div>
+                            </div>
                         </Card>
                     </div>
 
@@ -610,7 +634,9 @@
                 <footer className="bg-[#8a1c18] text-[#fbc707] py-12 border-t-4 border-[#fbc707]">
                     <div className="max-w-7xl mx-auto px-4 text-center">
                     <div className="flex justify-center items-center gap-4 mb-8">
-                        <Sun className="w-10 h-10" />
+                        <div className="w-12 h-12 bg-white rounded-full overflow-hidden border-2 border-[#fbc707]">
+                            <img src="Salus Animae logo completo.jpg" alt="Logo Salus Animæ" className="w-full h-full object-cover" />
+                        </div>
                         <h2 className="text-4xl font-serif font-bold">Salus Animæ</h2>
                     </div>
                     
